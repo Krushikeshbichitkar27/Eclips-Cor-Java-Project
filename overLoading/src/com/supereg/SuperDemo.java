@@ -1,7 +1,8 @@
 package com.supereg;
-
-public class SuperDemo {
-
+//declaring class
+public class SuperDemo 
+{
+//calling main method
 public static void main(String...args)
 {
 	Dog d= new Dog("White","Libra");
@@ -10,7 +11,7 @@ public static void main(String...args)
 	d.setColor("Black");
 	System.out.println(d);
 	
-}
+}//end of main
 	
 	
-}
+}//end of class

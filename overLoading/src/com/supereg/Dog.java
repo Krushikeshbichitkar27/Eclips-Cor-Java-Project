@@ -1,18 +1,24 @@
 package com.supereg;
-
+//inherit class 
 public class Dog extends Animal
 {
 private String color;
 private String bread;
-public Dog() {
+//default constructor
+public Dog() 
+{
 	super();
 	// TODO Auto-generated constructor stub
 }
-public Dog(String color, String bread) {
+//parameterize constructor
+public Dog(String color, String bread)
+{
 	super();
 	this.color = color;
 	this.bread = bread;
 }
+
+//getter setter method
 public String getColor() {
 	return color;
 }

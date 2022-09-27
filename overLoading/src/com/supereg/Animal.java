@@ -1,17 +1,24 @@
 package com.supereg;
-
-public class Animal {
+//declaring class
+public class Animal 
+{
 private String name;
 private String color;
-public Animal() {
+
+//default constructor
+public Animal()
+{
 	super();
 	// TODO Auto-generated constructor stub
 }
-public Animal(String name, String color) {
+//parmiterize constructor
+public Animal(String name, String color)
+{
 	super();
 	this.name = name;
 	this.color = color;
 }
+//getter setter method
 public String getName() {
 	return name;
 }
