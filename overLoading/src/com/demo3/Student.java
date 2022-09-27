@@ -1,49 +1,56 @@
 package com.demo3;
 
-public class Student 
-{
-private int id;
-private String name;
-private String address;
-public Student() {
-	super();
-	// TODO Auto-generated constructor stub
-}
-public Student(int id, String name, String address) {
-	super();
-	this.id = id;
-	this.name = name;
-	this.address = address;// aggregation : weak assocition
-}
-public int getId() {
-	return id;
-}
-public void setId(int id) {
-	this.id = id;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-public String getAddress() {
-	return address;
-}
-public void setAddress(String address) {
-	this.address = address;
-}
-@Override
-public String toString() {
-	return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
+public class Student {
+
+	private int id;
+	private String name;
+	private Address addr;// aggregation: weak assocition
+	// private final Address addr1; // composition: strong
+
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Student(int id, String name, Address addr) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.addr = addr;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Address getAddr() {
+		return addr;
+	}
+
+	public void setAddr(Address addr) {
+		this.addr = addr;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", addr=" + addr + "]";
+	}
+
 }
 
-
-
-
-}
-
-//Aggregation : has a relationship
-//student has an address
-//employee has an account
-//reference of the class
+// Aggregation: has a relationship
+//Student has an address
+// Employee has an account
+// reference of the class 

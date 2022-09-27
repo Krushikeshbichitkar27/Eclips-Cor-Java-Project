@@ -1,14 +1,13 @@
 package com.demo3;
 
 public class Address {
+
 	private String addressline1;
 	private String city;
 	private int pincode;
 	private String state;
 	private String country;
-	
-	
-	
+
 	public Address() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -65,12 +64,7 @@ public class Address {
 
 	@Override
 	public String toString() {
-		return addressline1+" "+ city +" "+ pincode + " " +  state + " "+ country;
+		return addressline1 + " " + city + "  " + pincode + "  " + state + " " + country;
 	}
-
-	
-	
-	
-	
 
 }
